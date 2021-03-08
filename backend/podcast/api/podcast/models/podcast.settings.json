@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "podcasts",
   "info": {
-    "name": "podcast",
-    "description": ""
+    "name": "Podcast"
   },
   "options": {
     "increments": true,
@@ -13,21 +12,25 @@
   "attributes": {
     "Title": {
       "type": "string",
+      "required": true
+    },
+    "Author": {
+      "type": "string",
       "required": true,
-      "unique": true
+      "default": "Matteo Cavallo"
     },
     "Description": {
       "type": "richtext",
       "required": true
     },
-    "Immagine": {
+    "Image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     }
   }
 }

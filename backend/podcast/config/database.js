@@ -2,13 +2,14 @@ module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: 'mongoose',
       settings: {
-        client: 'sqlite',
-        filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+        "uri": "mongodb+srv://podcast-strapi:Password1@podcast.vt3ox.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "database": "Podcast"
       },
       options: {
-        useNullAsDefault: true,
+        authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
+        ssl: env.bool('DATABASE_SSL', true),
       },
     },
   },
