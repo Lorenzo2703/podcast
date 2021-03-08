@@ -1,0 +1,37 @@
+<div class="container p-2 m-0 heigth">
+    <div class="row m-0">
+        <div class="col-12 col-md-6 col-xl-4" *ngFor="let item of list,let i = index">
+
+            <!-- card -->
+            <mat-card class="scroll ">
+                <mat-card-header>
+                    <div mat-card-avatar> <img class="img-card"
+                            src="http://localhost:1337{{item.Immagine.formats.small.url}}" alt="">
+                    </div>
+                    <mat-card-title>{{item.Title}}</mat-card-title>
+                    <mat-card-subtitle>Author</mat-card-subtitle>
+                </mat-card-header>
+
+                <a (click)="like[i]=!like[i]">
+                    <span>
+                        <i *ngIf="!like[i]" class="far fa-heart like-share"></i>
+                        <i *ngIf="like[i]" class="fas fa-heart like-share"></i>
+                    </span>
+                </a>
+                <a (click)="openModal($event)">
+                    <span class="p-2">
+                        <i class="fas fa-share-alt"></i>
+                    </span>
+                </a>
+
+                <mat-card-content class="pt-4">
+                    <div [innerHTML]="description[i]"></div>
+                </mat-card-content>
+                <mat-card-actions>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+
+</div>
