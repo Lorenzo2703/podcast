@@ -15,6 +15,7 @@ export class PodcastComponent implements OnInit {
 
 
   list: any = [];
+  list1: any = [];
   parsedContent: any;
   like = [false];
 
@@ -22,15 +23,37 @@ export class PodcastComponent implements OnInit {
 
   getPodcast() {
     this.ajax.get().subscribe((res) => {
-      this.list = res;
-      console.log(res);
-
+      this.list1 = res;
+      this.list1.forEach((element: any, index: any) => {
+        this.list[index] = element;
+      });
       this.list.forEach((element: any) => {
         this.description.push(marked(element.Description));
       });
 
     })
   }
+
+  comingSoon() {
+    for (let i = 0; i < 12; i++) {
+      this.list[i] =
+      {
+        Author: "🤐",
+        Description: "More content incoming",
+        Image: {
+          formats: {
+            small: [{ url: "" }]
+          }
+        },
+        Title: "Coming Soon "
+      }
+    }
+    this.getPodcast();
+
+
+  }
+
+
 
   openModal(event: any) {
 
@@ -39,7 +62,8 @@ export class PodcastComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getPodcast();
+    this.comingSoon();
+    // this.getPodcast();
   }
 
 }
