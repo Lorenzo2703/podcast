@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -25,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     PodcastComponent,
     ContactComponent,
     FooterComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
