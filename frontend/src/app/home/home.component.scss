@@ -26,8 +26,8 @@ h1   { font-size: 2.4rem; } /* =24px */
 
 .landing-page-container {
     width: 100%;
-    min-height: 100%;
-    height: 90rem;
+    
+  
     background-image: url('https://s29.postimg.org/vho8xb2pj/landing_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@ h1   { font-size: 2.4rem; } /* =24px */
 
 .content__wrapper {
     max-width: 1000px;
-    width: 80%;
+    width: 50%;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -326,26 +326,12 @@ h1   { font-size: 2.4rem; } /* =24px */
 }
 
 scroll {
-    height: 120px;
-    overflow-y: hidden;
-    transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transform: scale(0.95);
+    height: 100%;
+    width: 100%;
    
 }
 
-.scroll:hover{
-    height: 100%;
-    transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    overflow-y: hidden;
-    transform: scale(1);
-    box-shadow: -1px 12px 22px 2px rgba(0,0,0,0.21);
-}
+
 
 .heigth{
     min-height: 90%;
@@ -362,6 +348,6 @@ scroll {
 .img-card{
     width: 50px;
     height: 50px;
-    padding: 5px;
+  
     object-fit:contain;
 }
