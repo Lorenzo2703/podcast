@@ -105,11 +105,11 @@ h1   { font-size: 2.4rem; } /* =24px */
     width: 7.25rem;
     list-style: none;
     text-align: center;
-    left: 50%;
+    // left: 50%;
     position: relative;
     overflow: hidden;
     padding: 0;
-    margin: 0;
+    margin: auto;
 
 
     .social__icon {
@@ -323,4 +323,45 @@ h1   { font-size: 2.4rem; } /* =24px */
     100% {
         transform: rotate(360deg);
     }
+}
+
+scroll {
+    height: 120px;
+    overflow-y: hidden;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transform: scale(0.95);
+   
+}
+
+.scroll:hover{
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    overflow-y: hidden;
+    transform: scale(1);
+    box-shadow: -1px 12px 22px 2px rgba(0,0,0,0.21);
+}
+
+.heigth{
+    min-height: 90%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .heigth{
+        min-height: 120%;
+    }    
+  }
+
+
+.img-card{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    object-fit:contain;
 }
