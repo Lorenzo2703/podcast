@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "Members"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Member": {
+      "type": "component",
+      "repeatable": false,
+      "component": "staff.membro"
+    }
+  }
+}

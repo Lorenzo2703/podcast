@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_staff_membros",
+  "info": {
+    "name": "Membro",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "staff.social"
+    }
+  }
+}
