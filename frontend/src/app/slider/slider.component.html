@@ -1,19 +1,58 @@
-<div class="mkt-3dSlider py-6">
-    <section id="slider">
+<div class="container-fluid pt-4 mt-3">
+    <div class="pt-2">
+        <div class="row m-0">
+            <div class="col-10 offset-1 col-md-4 offset-md-4">
+                <div>
+                    <h2 class="text-center">I membri dello staff</h2>
+                    <div class="px-4">
+                        <p> Le persone che hanno reso possibile tutto questo</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section id="slider" class="mt-4">
 
 
-        <input class="card-slider" type="radio" name="slider" id="s1">
+            <input class="card-slider" type="radio" name="slider" id="s1">
+            <input class="card-slider" type="radio" name="slider" id="s2">
+            <input class="card-slider" type="radio" name="slider" id="s3" checked>
+            <input class="card-slider" type="radio" name="slider" id="s4">
+            <input class="card-slider" type="radio" name="slider" id="s5">
 
 
-        <input class="card-slider" type="radio" name="slider" id="s2">
-        <input class="card-slider" type="radio" name="slider" id="s3" checked>
-        <input class="card-slider" type="radio" name="slider" id="s4">
-        <input class="card-slider" type="radio" name="slider" id="s5">
 
-        <label for="s1" id="slide1" class="card-slider"></label>
-        <label for="s2" id="slide2" class="card-slider"></label>
-        <label for="s3" id="slide3" class="card-slider"></label>
-        <label for="s4" id="slide4" class="card-slider"></label>
-        <label for="s5" id="slide5" class="card-slider"></label>
-    </section>
+
+            <label for="s1" id="slide1" class="card-slider">
+                <img src="http://localhost:1337{{list[0].Member.Image.formats.small.url}}">
+                <h2 class="px-2 pt-2 text text-light">{{list[0].Member.Name}}</h2>
+                <h3 class="px-2 text-1 text-light"> social...</h3>
+            </label>
+            <label for="s2" id="slide2" class="card-slider">
+                <img src="http://localhost:1337{{list[1].Member.Image.formats.small.url}}">
+                <h2 class="px-2 pt-2 text text-light">{{list[1].Member.Name}}</h2>
+                <h3 class="px-2 text-1 text-light"> social...</h3>
+            </label>
+            <label for="s3" id="slide3" class="card-slider">
+                <img src="http://localhost:1337{{list[2].Member.Image.formats.small.url}}">
+                <h2 class="px-2 pt-2 text text-light">{{list[2].Member.Name}}</h2>
+                <h3 class="px-2 text-1 text-light"> social...</h3>
+            </label>
+            <label for="s4" id="slide4" class="card-slider">
+                <img src="http://localhost:1337{{list[3].Member.Image.formats.small.url}}">
+                <h2 class="px-2 pt-2  text text-light">{{list[3].Member.Name}}</h2>
+                <h3 class="px-2 text-1 text-light"> social...</h3>
+            </label>
+            <label for="s5" id="slide5" class="card-slider">
+                <img src="http://localhost:1337{{list[4].Member.Image.formats.small.url}}">
+                <h2 class="px-2 pt-2  text text-light">{{list[4].Member.Name}}</h2>
+                <h3 class="px-2 text-1 text-light"> social...</h3>
+            </label>
+
+
+        </section>
+
+
+
+    </div>
 </div>

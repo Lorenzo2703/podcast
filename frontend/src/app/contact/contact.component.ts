@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AjaxService } from '../ajax.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ajax: AjaxService) { }
 
   ngOnInit(): void {
+    this.getMembers();
   }
+
+  listaMembers: any = [];
+
+
+  getMembers() {
+    this.ajax.getMembers().subscribe((res) => {
+      this.listaMembers = res;
+      console.log(this.listaMembers);
+
+    })
+  }
+
+
 
 }

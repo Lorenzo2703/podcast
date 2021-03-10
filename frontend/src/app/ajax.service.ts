@@ -8,10 +8,16 @@ export class AjaxService {
 
   constructor(private http: HttpClient) { }
 
-  url = "http://localhost:1337/podcasts"
+  urlPodcast = "http://localhost:1337/podcasts";
+  urlMembers = "http://localhost:1337/members";
 
-  get() {
-    return this.http.get(this.url);
+  getPodcast() {
+    return this.http.get(this.urlPodcast);
+  }
+
+
+  getMembers() {
+    return this.http.get(this.urlMembers);
   }
 
 }

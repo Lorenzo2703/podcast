@@ -1,49 +1,22 @@
-<div class="container mt-4">
+<div class="container-fluid p-0 mt-4">
 
-    <div class="container">
-        <div class="container__item landing-page-container">
-            <div class="content__wrapper">
-
-                <header class="header">
-                    <ul class="social-container header__item">
-                        <li class="social__icon social__icon--fb">
-                            <a href="https://t.me/accademiadeipugni" target="_blank"> <img
-                                    src="https://image.flaticon.com/icons/svg/1077/1077048.svg" alt="telegram">
-                            </a>
-                        </li>
-
-                        <li class="social__icon social__icon--in">
-                            <a href="https://instagram.com/accademiadeipugni?igshid=m7vxry8kx5y8" target="_blank">
-                                <img src="https://image.flaticon.com/icons/svg/1077/1077042.svg" alt="instagram">
-                            </a>
-                        </li>
-                    </ul>
-                </header>
-                <mat-card class="scroll ">
-                    <mat-card-header>
-                        <div mat-card-avatar>
-                            <img class="img-card" src="../../assets/photojpg.jpg" alt="">
-                        </div>
-                        <mat-card-title>Ep 01: Non pensarci inzia</mat-card-title>
-                        <mat-card-subtitle>Autore: Matteo & Lorenzo</mat-card-subtitle>
-                    </mat-card-header>
-
-
-
-                    <mat-card-content class="pt-4">
-                        <div>
-                            La magica storia di come tutto ebbe inzio
-                        </div>
-                    </mat-card-content>
-                    <mat-card-actions>
-                    </mat-card-actions>
-                </mat-card>
-            </div>
-
+    <h2 class="text-center">Ultima uscita</h2>
+    <div class="row m-0 pb-4">
+        <div class="col-10 col-md-4 offset-1 offset-md-2">
+            <img src="http://localhost:1337{{last.Image.formats.large.url}}" style="width: 100%" />
         </div>
-
-
-
+        <div class="col-10 col-md-4 offset-1">
+            <h3>
+                {{last.Title}}
+            </h3>
+            <p>
+                {{last.Description}}
+            </p>
+        </div>
     </div>
+
+    <div class="line"></div>
+
+
 
 </div>
