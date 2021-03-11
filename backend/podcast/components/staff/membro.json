@@ -2,7 +2,8 @@
   "collectionName": "components_staff_membros",
   "info": {
     "name": "Membro",
-    "icon": "user"
+    "icon": "user",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -23,6 +24,9 @@
       "type": "component",
       "repeatable": true,
       "component": "staff.social"
+    },
+    "Citazione": {
+      "type": "text"
     }
   }
 }

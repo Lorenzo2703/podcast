@@ -10,3 +10,7 @@
     height: 50px;
     object-fit:contain;
 }
+
+.height{
+    min-height:50vh ;
+}
