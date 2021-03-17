@@ -6,23 +6,25 @@
             <div *ngIf="(i%2)==0">
                 <div class="col-10 offset-1 col-xl-7">
                     <mat-card class="m-4">
+                        <p align="center">
+                            <img class="img img-sm"
+                                src="http://localhost:1337{{listaMembers[i].Member.Image.formats.small.url}}" alt="">
+                        </p>
+
                         <div class="row">
-
-
-
                             <div class="col-12 col-xl-10 order-1 p-3">
                                 <h3 class="text-xl-start text-center ">{{listaMembers[i].Member.Name}}</h3>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse aut, veniam corporis
-                                aliquam
-                                natus
-                                magni
-                                error, dolorem similique omnis et ea pariatur fugiat accusantium tenetur adipisci
-                                nulla!
-                                Debitis,
-                                exercitationem eos.
+                                <span class="citazione">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Esse aut, veniam corporis
+                                    aliquam
+                                    natus
+                                    magni
+                                    error, dolorem similique omnis et ea pariatur fugiat accusantium tenetur adipisci
+                                    nulla!
+                                    Debitis,
+                                    exercitationem eos.</span>
                             </div>
-                            <div class="col-4 offset-4 col-xl-2 offset-xl-0 order-0">
-
+                            <div class="col-4 offset-4 col-xl-2 offset-xl-0 order-0 img-xl">
                                 <img class="img"
                                     src="http://localhost:1337{{listaMembers[i].Member.Image.formats.small.url}}"
                                     alt="">
@@ -35,22 +37,26 @@
             <div *ngIf="(i%2)!=0">
                 <div class="col-10 offset-1 col-xl-7 offset-xl-4">
                     <mat-card class="m-4">
+                        <p align="center">
+                            <img class="img img-sm"
+                                src="http://localhost:1337{{listaMembers[i].Member.Image.formats.small.url}}" alt="">
+                        </p>
                         <div class="row">
 
                             <div class="col-12 col-xl-10 order-1 order-xl-0 p-3">
                                 <h3 class="text-xl-end text-center ">{{listaMembers[i].Member.Name}}</h3>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse aut, veniam corporis
-                                aliquam
-                                natus
-                                magni
-                                error, dolorem similique omnis et ea pariatur fugiat accusantium tenetur adipisci nulla!
-                                Debitis,
-                                exercitationem eos.
+                                <span class="citazione">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Esse aut, veniam corporis
+                                    aliquam
+                                    natus
+                                    magni
+                                    error, dolorem similique omnis et ea pariatur fugiat accusantium tenetur adipisci
+                                    nulla!
+                                    Debitis,
+                                    exercitationem eos.</span>
                             </div>
 
-                            <div class="col-4 offset-4 offset-xl-0 col-xl-2  order-0 order-xl-1">
-
-
+                            <div class="col-4 offset-4 offset-xl-0 col-xl-2  order-0 order-xl-1 img-xl">
                                 <img class="img"
                                     src="http://localhost:1337{{listaMembers[i].Member.Image.formats.small.url}}"
                                     alt="">
