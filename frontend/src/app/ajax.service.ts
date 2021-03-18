@@ -8,8 +8,8 @@ export class AjaxService {
 
   constructor(private http: HttpClient) { }
 
-  urlPodcast = "http://localhost:1337/podcasts";
-  urlMembers = "http://localhost:1337/members";
+  urlPodcast = "https://aqueous-earth-22833.herokuapp.com/podcasts";
+  urlMembers = "https://aqueous-earth-22833.herokuapp.com/members";
 
   getPodcast() {
     return this.http.get(this.urlPodcast);

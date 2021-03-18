@@ -20,6 +20,7 @@ export class ContactComponent implements OnInit {
   getMembers() {
     this.ajax.getMembers().subscribe((res) => {
       this.listaMembers = res;
+     
 
     })
   }
